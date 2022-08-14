@@ -61,7 +61,7 @@ void    print_square(int width, int height)
     }
     else
     {
-        print_me("In order to avoid unexpected behavior I limit the input to 100x100 (most screens will display correctly)\n");
+        print_me("In order to avoid unwanted behavior I limit the input to 100x100 (most screens will display correctly)\n");
     }
 }
 int main()
