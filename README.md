@@ -1,5 +1,7 @@
 # Square
-The program receives two arguments that represents the height and width of the figure to draw. The unique library I will use is &lt;unistd.h>. All the rest of functions have been created by myself.
-Due to the screen size limitation, the implementation can be imposible for some huge inputs so in order to prevent display errors I limited the input for 100 both height and width.
+This program prints a square or rectangle depending on the input sizes. All the code was written using only <unistd.h> library and my own implementation of the other functions.
 
-In order to compile use this command: gcc -Wall -Wextra -Werror main.c -o main
+# How to compile it
+There are several way you can compile it in Linux:
+*If you have make you just type: `$make`.
+*If you have only gcc but not make you type: `$gcc main.c ft_stdlib.c ft_strlib.c -o square`.
