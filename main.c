@@ -1,28 +1,4 @@
-#include <unistd.h>
-
-int len(char *str)
-{
-    int i;
-    
-    i = 0;
-    while (str[i] != '\0')
-    {
-        i++;
-        
-    }
-    return (i);
-}
-
-void    print_char(char c)
-{
-    write(1, &c, 1);
-}
-
-// Prints a string in the terminal
-void    print_me(char *str)
-{
-    write(1, str, len(str));
-}
+#include "ft_strlib.h"
 
 void    print_square(int width, int height)
 {
@@ -39,29 +15,29 @@ void    print_square(int width, int height)
             {
                 if ((x == 0 || x == width - 1) && (y == 0 || y == height - 1))
                 {
-                    print_char('0');
+                    ft_printchar('0');
                 }
                 else if (x == 0 || x == width - 1)
                 {
-                    print_char('|');
+                    ft_printchar('|');
                 }
                 else if (y == 0 || y == height - 1)
                 {
-                    print_char('-');
+                    ft_printchar('-');
                 }
                 else
                 {
-                    print_char(' ');
+                    ft_printchar(' ');
                 }
                 x++;
             }
-            print_char('\n');
+            ft_printchar('\n');
             y++;
         }
     }
     else
     {
-        print_me("In order to avoid unwanted behavior I limit the input to 100x100 (most screens will display correctly)\n");
+        ft_printstr("In order to avoid unwanted behavior I limit the input to 100x100 (most screens will display correctly)\n");
     }
 }
 int main()
